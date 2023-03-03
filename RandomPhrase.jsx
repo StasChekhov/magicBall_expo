@@ -1,30 +1,72 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, Button } from "react-native";
+import { useEffect, useState } from "react";
+import { Text } from "react-native";
 
 function RandomPhrase() {
   const [phrase, setPhrase] = useState("");
 
   const phrases = [
-    "Фраза 1",
-    "Фраза 2",
-    "Фраза 3",
-    "Фраза 4",
-    "Фраза 5",
-    "Фраза 6",
-    "Фраза 7",
-    "Фраза 8"
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
   ];
 
-  useEffect(()=> {
+  useEffect(() => {
     const randomIndex = Math.floor(Math.random() * phrases.length);
     setPhrase(phrases[randomIndex]);
-  },[])
-
+  }, []);
 
   return (
-    <View>
-      <Text>{phrase}</Text>
-    </View>
+    <Text
+      style={{
+        position: "absolute",
+        color: "white",
+        fontSize: 15,
+        textAlign: "center",
+      }}
+    >
+      {phrase}
+    </Text>
   );
 }
 export default RandomPhrase;
+
+// ------- affirmative answers --------- //
+// ● It is certain.
+// ● It is decidedly so.
+// ● Without a doubt.
+// ● Yes definitely.
+// ● You may rely on it.
+// ● As I see it, yes.
+// ● Most likely.
+// ● Outlook good.
+// ● Yes.
+// ● Signs point to yes.
+// ------- non-committal answers --------- //
+// ● Reply hazy, try again.
+// ● Ask again later.
+// ● Better not tell you now.
+// ● Cannot predict now.
+// ● Concentrate and ask again.
+// ------- negative answers --------- //
+// ● Don't count on it.
+// ● My reply is no.
+// ● My sources say no.
+// ● Outlook not so good.
+// ● Very doubtful.
