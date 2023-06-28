@@ -22,8 +22,8 @@ const images = [
     title: "Green",
   },
   {
-    source: require("../../SplashScreen.png"),
-    title: "Green lights",
+    source: require("../../assets/splash.png"),
+    title: "Blue lights",
   },
   {
     source: require("../assets/backgroundUniverse.png"),

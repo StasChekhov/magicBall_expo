@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "magicBall_expo",
+    "name": "Prediction Ball",
     "slug": "magicBall_expo",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,16 +18,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "org.sharkSW.magicBall",
+      "buildNumber": "8"
     },
     "android": {
+      "package": "com.magic.prediction.ball",
+      "serviceAccountKeyPath": "/Users/staschekhov/Downloads/my-upload-key.keystore",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "versionCode": 9
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "199cadae-aaf1-484f-bee5-68c668a8be09"
+      }
     }
   }
 }

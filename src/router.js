@@ -47,16 +47,6 @@ export const useRoute = () => {
         name="Settings"
         component={SettingsScreen}
       />
-      {/* <tab.Screen
-        options={{
-          headerShown: false,
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
-          ),
-        }}
-        name="Profile"
-        component={""}
-      /> */}
     </tab.Navigator>
   );
 };

@@ -17,25 +17,25 @@ function PredictionCircle() {
 
   const listItems = switches.map((item) => {
     if (item.id === 1 && item.title === "Classic" && item.value === true) {
-      return <RandomPhrase />;
+      return <RandomPhrase key="random-phrase" />;
     } else if (
       item.id === 2 &&
       item.title === "Yes or No" &&
       item.value === true
     ) {
-      return <FiftyFifty />;
+      return <FiftyFifty key="fifty-fifty" />;
     } else if (
       item.id === 3 &&
       item.title === "Days of the week" &&
       item.value === true
     ) {
-      return <DaysOfTheWeek />;
+      return <DaysOfTheWeek key="days-of-week" />;
     } else if (
       item.id === 4 &&
       item.title === "Months" &&
       item.value === true
     ) {
-      return <Months />;
+      return <Months key="months" />;
     }
   });
 

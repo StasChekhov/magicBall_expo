@@ -19,13 +19,12 @@ import { createContext } from "react";
 import { useContext } from "react";
 import { SettingContext } from "../context";
 
-const THRESHOLD = 1.2; // adjust this value to suit your needs
+const THRESHOLD = 2.9; // adjust this value to suit your needs
 
 export const TestContext = createContext();
 
 export default function HomeScreen() {
   const [isShaken, setIsShaken] = useState(false);
-  console.log("isShaken", isShaken);
   useEffect(() => {
     if (isShaken === false) {
       const subscription = Accelerometer.addListener((accelerometerData) => {
